@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #3b3b3b;
+  background-color: #222;
 }
 
 .movie-container {
@@ -13,10 +13,9 @@ body {
   position: relative;
   justify-content: center;
   flex-wrap: wrap;
-  width: 14vw;
+  width: 18rem;
   min-height: 50vh;
   margin: 10px auto;
-  background-color: #111;
   border-radius: 10px;
   overflow: hidden;
   transition: 0.25s;
@@ -28,7 +27,7 @@ body {
   transition: 0.25s;
 }
 
-.movie-container img:hover {
+.movie-container:hover {
   transform: scale(1.1);
   transition: 0.25s;
   overflow: visible;
@@ -50,6 +49,7 @@ body {
   position: absolute;
   bottom: 15px;
   height: 40px;
+  opacity: 0;
   background-color: #333;
   width: 70%;
   margin: 0 auto;
@@ -58,6 +58,17 @@ body {
 .favourite p {
   color: white;
   line-height: 40px;
+  transition: 0.2s;
+}
+
+.favourite:hover p {
+  color: #ccc;
+  transition: 0.2s;
+}
+
+.movie-container:hover .favourite {
+  opacity: 1;
+  transform: 1s;
 }
 
 .search {

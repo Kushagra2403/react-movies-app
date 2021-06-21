@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import SearchBar from "./components/SearchBar";
 import MovieList from "./components/MovieList";
 import AddFavourite from "./components/AddFavourite";
+import RemoveFavourite from "./components/RemoveFavourite";
 import "./App.css";
 
 function App() {
@@ -130,7 +131,7 @@ function App() {
             <Route path="/favourites">
               <MovieList
                 movies={favourites}
-                favourite={AddFavourite}
+                favourite={RemoveFavourite}
                 handleFavourite={removeFavourite}
               />
             </Route>
